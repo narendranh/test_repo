@@ -1,0 +1,23 @@
+connector:
+  name: harness_test
+  identifier: harness_test
+  description:
+  orgIdentifier: default
+  projectIdentifier: harness_project
+  type: Github
+  spec:
+    url: https://github.com/narendranh/
+    validationRepo: test_repo
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: narendran.harikrishnan@gmail.com
+          tokenRef: git_hub
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: git_hub
+    executeOnDelegate: false
+    type: Account
