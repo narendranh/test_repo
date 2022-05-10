@@ -1,0 +1,23 @@
+connector:
+  name: harness_git
+  identifier: harness_git
+  description:
+  orgIdentifier: default
+  projectIdentifier: harness_project
+  type: Github
+  spec:
+    url: https://github.com/naren-terra
+    validationRepo: terraoform-cloud
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: narendran.harikrishnan@gmail.com
+          tokenRef: git_hub
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: git_hub
+    executeOnDelegate: false
+    type: Account
