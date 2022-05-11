@@ -1,0 +1,13 @@
+connector:
+  name: aws_cloud
+  identifier: aws_cloud
+  description:
+  orgIdentifier: default
+  projectIdentifier: harness_project
+  type: Aws
+  spec:
+    credential:
+      type: ManualConfig
+      spec:
+        accessKey: AKIAQZO7WVSINDVRERWN
+        secretKeyRef: AWs_Creds
