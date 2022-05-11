@@ -1,0 +1,12 @@
+connector:
+  name: Kubernetets_test
+  identifier: Kubernetets_test
+  description:
+  orgIdentifier: default
+  projectIdentifier: harness_project
+  type: K8sCluster
+  spec:
+    credential:
+      type: InheritFromDelegate
+    delegateSelectors:
+    - delegatetest
